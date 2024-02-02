@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!-- - administrator -->
+
+<head>
+    <title>여론조사</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        input[type="radio"] {
+            width: 17px;
+            height: 17px;
+            border: 1px solid darkgray;
+            border-radius: 50%;
+            outline: none;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <div>
+            <h1 style="text-align: center; background-color: #ffffff; border-radius: 5%;">여론조사</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li style="list-style:none"><a href="certification.html">여론조사 인증</a></li>
+                <li style="list-style:none"><a href="administrator.html">관리자</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <!-- <main></main> -->
+    <!-- 차후 문항 채우기 -->
+    <div style="text-align: center;">
+        <br>
+        <form action="">
+            <!-- method="post" -->
+            <!-- name 키, value 값 -->
+            <fieldset>
+                Q1. 질문1<br><br>
+                <input type="radio" name="a1" id="q1" value="a1-1답변"> A1. 답변<br>
+                <input type="radio" name="a1" id="q1" value="a1-2답변"> A2. 답변<br>
+                <input type="radio" name="a1" id="q" value="a1-3답변"> A3. 답변<br>
+            </fieldset><br>
+            <fieldset>
+                Q2. 질문2<br><br>
+                <input type="radio" name="a2" id="q" value="a2-1답변"> A1. 답변<br>
+                <input type="radio" name="a2" id="q" value="a2-2답변"> A2. 답변<br>
+                <input type="radio" name="a2" id="q" value="a2-3답변"> A3. 답변<br>
+            </fieldset><br>
+            <fieldset>
+                Q3. 질문3<br><br>
+                <input type="radio" name="a3" id="q" value="a3-1답변"> A1. 답변<br>
+                <input type="radio" name="a3" id="q" value="a3-2"> A2. 답변<br>
+                <input type="radio" name="a3" id="q" value="a3-3"> A3. 답변<br>
+
+            </fieldset>
+            <!-- <fieldset class="form">
+                <legend>Q6 체크박스</legend>
+                <ul>
+                    <li style="list-style:none"><input type="checkbox" name="a6"> A1</li>
+                    <li style="list-style:none"><input type="checkbox" name="a6"> A2</li>
+                    <li style="list-style:none"><input type="checkbox" name="a6"> A3</li>
+                </ul>
+            </fieldset><br> -->
+
+            <input class="encrypt-button" id="submitBtn" type="button" value="제출"></input>
+
+        </form>
+    </div>
+
+    <script src="aes-ctr.js"></script>
+
+</body>
+
+</html>
