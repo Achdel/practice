@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!-- - administrator -->
+
+<head>
+
+    <title>여론조사</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        input[type="radio"] {
+            width: 17px;
+            height: 17px;
+            border: 2px solid darkgray;
+            border-radius: 50%;
+            outline: none;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body><br>
+    <!-- <header>
+        <div>
+            <h1 style="text-align: center; background-color: #ffffff; border-radius: 5%;">여론조사</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li style="list-style:none"><a href="certification.html">여론조사 인증</a></li>
+                <li style="list-style:none"><a href="administrator.html">내용 추가</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <!-- <main></main> -->
+    <!-- 차후 문항 채우기 -->
+    <div style="text-align: center;">
+        <form action="">
+            <!-- method="post" -->
+            <!-- name 키, value 값 -->
+            <fieldset>
+                Q1. 질문1<br><br>
+                <input type="radio" name="a1" value="a1-1답변"> A1. 답변<br>
+                <input type="radio" name="a1" value="a1-2답변"> A2. 답변<br>
+                <input type="radio" name="a1" value="a1-3답변"> A3. 답변<br>
+                <input type="radio" name="a1" value="a1-4답변"> A4. 답변<br>
+            </fieldset><br>
+            <fieldset>
+                Q2. 질문2<br><br>
+                <input type="radio" name="a2" value="a2-1답변"> A1. 답변<br>
+                <input type="radio" name="a2" value="a2-2답변"> A2. 답변<br>
+                <input type="radio" name="a2" value="a2-3답변"> A3. 답변<br>
+                <input type="radio" name="a1" value="a2-4답변"> A4. 답변<br>
+            </fieldset><br>
+            <fieldset>
+                Q3. 질문3<br><br>
+                <input type="radio" name="a3" value="a3-1답변"> A1. 답변<br>
+                <input type="radio" name="a3" value="a3-2답변"> A2. 답변<br>
+                <input type="radio" name="a3" value="a3-3답변"> A3. 답변<br>
+                <input type="radio" name="a1" value="a3-4답변"> A4. 답변<br>
+
+            </fieldset>
+
+            <button id="submitBtn" type="button">완료</button>
+
+        </form>
+
+    </div>
+    <!-- <div>
+        <p id="ciphertext1"></p>
+        <p id="ciphertext2"></p>
+        <p id="ciphertext3"></p>
+    </div> -->
+    <script src="aes-ctr.js"></script>
+    <script>
+        // document.getElementById("ciphertext1").innerText = ciphertext1.innerText;</script>
+</body>
+
+</html>
